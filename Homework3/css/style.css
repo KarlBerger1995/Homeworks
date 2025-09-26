@@ -1,0 +1,70 @@
+@import url("reset.css");
+
+/* комбінація селекторів */
+
+header h1 {
+  color: darkcyan;
+}
+
+header ul {
+  color: orange;
+}
+
+header ul .active {
+  color: greenyellow;
+}
+
+.list.block-list {
+  color: purple;
+}
+
+/* селектори за атрибутом */
+[class$="-title"] {
+  color: darkblue;
+}
+
+/* селектор + */
+
+h2 + img {
+  width: 300px;
+}
+
+img + .text {
+  color: darkolivegreen;
+}
+
+h2 + p.first-p {
+  color: blueviolet;
+}
+
+/* cелектор > */
+
+div > p {
+  color: teal;
+}
+
+p > span {
+  color: yellowgreen;
+}
+
+p > i {
+  color: chocolate;
+}
+
+p > em {
+  color: aqua;
+}
+
+p > mark {
+  color: red;
+}
+
+#culture > img {
+  width: 300px;
+}
+
+/* селектор ~ */
+
+h2 ~ p {
+  color: darkslateblue;
+}
