@@ -1,0 +1,184 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Підключення шрифту через import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Підключення через Font-face */
+@import url("fonts.css");
+
+body {
+  font-size: 14px;
+  font-family: "Lato", Arial, sans-serif;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.article > div {
+  margin-bottom: 10px;
+}
+
+div > p {
+  margin-bottom: 10px;
+}
+
+.lato {
+  font-size: 16px;
+}
+
+.lato .regular {
+  font-weight: 400;
+  color: aqua;
+}
+
+.lato .bold {
+  font-weight: 700;
+  color: blue;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.montserrat .regular {
+  font-weight: 400;
+  color: orange;
+}
+
+.montserrat .black {
+  font-weight: 900;
+  color: red;
+}
+
+.montserrat .italic-bold {
+  font-style: italic;
+  font-weight: 700;
+  color: purple;
+}
+.yantramanav {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 16px;
+}
+
+.yantramanav .medium {
+  font-weight: 400;
+  color: #30778b;
+}
+
+.yantramanav .bold {
+  font-weight: 700;
+  color: darkgreen;
+}
+
+.upper {
+  text-transform: uppercase;
+  color: darkred;
+}
+
+.lower {
+  text-transform: lowercase;
+  color: darkblue;
+}
+
+.capitalize {
+  text-transform: capitalize;
+  color: lightblue;
+}
+
+.under {
+  text-decoration: underline;
+  color: darkorange;
+}
+
+.over {
+  text-decoration: overline;
+  color: darkviolet;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.lh-1 {
+  line-height: 1;
+  color: bisque;
+}
+
+.lh-1-5 {
+  line-height: 1.5;
+  color: brown;
+}
+
+.lh-2 {
+  line-height: 2;
+  color: chocolate;
+}
+
+.left {
+  text-align: left;
+  color: darkcyan;
+}
+
+.center {
+  text-align: center;
+  color: darkgoldenrod;
+}
+
+.right {
+  text-align: right;
+  color: darkmagenta;
+}
+
+.justify {
+  text-align: justify;
+  color: darkolivegreen;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+  color: darkslategray;
+}
+
+.ls-1-5 {
+  letter-spacing: 1.5px;
+  color: darkslateblue;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+  color: #2629b4;
+}
+
+.whs-nw {
+  white-space: nowrap;
+  color: #b42626;
+}
+
+.whs-nl {
+  white-space: normal;
+  color: #26b45c;
+}
+
+.ws-10 {
+  word-spacing: 10px;
+  color: #b45c26;
+}
+
+.ws-20 {
+  word-spacing: 20px;
+  color: #6b26b4;
+}
+
+.text-shadow {
+  text-shadow: 3px 3px 5px #000000, -3px 2px 4px #ff0000;
+  color: white;
+}

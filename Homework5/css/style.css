@@ -1,0 +1,76 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+/* :root {
+  --primary-color: #2f302c;
+  --secondary-color: #7e7f7c;
+  --bg-color: #f4f4f4;
+  --font-family: "Lato", sans-serif;
+} */
+
+body {
+  background-color: #c4c4c4;
+  font-family: Lato, sans-serif;
+  color: #7e7f7c;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.article {
+  padding-top: 50px;
+}
+
+h1,
+h2,
+h3 {
+  color: #2f302c;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.head {
+  margin-bottom: 72px;
+}
+
+.container {
+  padding: 82px 0;
+}
+
+.items {
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.row1 {
+  margin: 0 -15px 68px;
+  font-size: 0;
+}
+
+.row2 {
+  margin: 0 -15px;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.item {
+  padding: 0 15px;
+  width: 33.3333%;
+  display: inline-block;
+  vertical-align: top;
+}
+.content {
+  font-size: 16px;
+  text-align: center;
+}
+
+.item-title {
+  margin: 24px 0;
+}
+
+.content p {
+  text-align: justify;
+}
