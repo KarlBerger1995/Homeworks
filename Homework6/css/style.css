@@ -41,13 +41,13 @@ body {
 }
 
 .banner-body {
-  max-width: 1170px;
+  max-width: 1362px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .banner-info {
-  max-width: 520px;
+  max-width: 650px;
   margin-left: auto;
   padding: 114px 0 110px;
   color: var(--black-1);
