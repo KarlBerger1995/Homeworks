@@ -1,0 +1,121 @@
+/* Скидання стилів */
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+/* Основні стилі */
+
+/* Значення за замовченням  */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  line-height: 1.42;
+  background-color: #ececec;
+  color: rgb(87, 60, 60);
+}
+
+header,
+main {
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(132, 116, 164);
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background-color: bisque;
+}
+
+.logo {
+  margin: 0 50px;
+  padding: 20px 0;
+}
+
+.logo p {
+  display: inline-block;
+  margin-left: 75%;
+  color: cadetblue;
+}
+
+.logo p,
+.logo img {
+  vertical-align: middle;
+}
+
+main h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+  color: blueviolet;
+  margin-bottom: 30px;
+}
+
+[class*="-container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+[class*="block__"] {
+  background-color: rgb(135, 195, 241, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.block li {
+  padding: 0 15px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.block__one img,
+.block__four img {
+  margin-bottom: 20px;
+}
+
+.block p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: blueviolet;
+}
+
+.block__five p {
+  color: purple;
+  font-size: 24px;
+}
+
+.block__five li {
+  vertical-align: middle;
+}
+
+.block__five > p {
+  margin-bottom: 30px;
+}
+
+.before::before {
+  vertical-align: middle;
+  content: "";
+  background-image: url("../img/homework8/icon/right-arrow-1.svg");
+  background-repeat: repeat-x;
+  width: 25px;
+  height: 25px;
+}
+
+footer {
+  font-size: 32px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+}
+
+hr {
+  background-color: #000;
+  height: 1px;
+}
