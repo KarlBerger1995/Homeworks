@@ -9,15 +9,14 @@ body {
   font-size: 19px;
   line-height: 1.42;
   background-color: #ececec;
-  color: rgb(87, 60, 60);
 }
 
 header,
 main {
-  background-color: lightgray;
+  background-color: #cdcdce;
   border-radius: 10px;
   margin-bottom: 50px;
-  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 4px 8px 4px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
@@ -61,7 +60,7 @@ main h2 {
 }
 
 [class*="block__"] {
-  background-color: rgb(135, 195, 241, 0.6);
+  background-color: rgba(135, 195, 241, 0.6);
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 50px;
