@@ -1,0 +1,83 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ccc;
+  color: #fff;
+  padding: 30px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.wrapper__title {
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #832051;
+}
+
+.header,
+.main,
+.footer {
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  margin-inline: auto;
+  padding: 0 15px;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 612px;
+}
+
+.item-kind {
+  display: inline-block;
+  margin-right: 50px;
+  max-width: 320px;
+  max-height: 585px;
+}
+
+.item-kind:last-child {
+  margin-right: 0;
+}
+
+.trusted {
+  margin-bottom: 30px;
+}
+
+.trusted__content {
+  border: 1px solid #ececec;
+  padding: 10px;
+}
+
+.trusted__list {
+  border: 1px solid purple;
+  margin-bottom: 10px;
+}
+
+.trusted__list:last-child {
+  margin-bottom: 0;
+}
+
+.trusted__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.trusted__item:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
