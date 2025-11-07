@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  padding: 10px;
+}
+
+header,
+footer {
+  text-align: center;
+  font-size: 32px;
+  padding: 20px 0;
+}
+
+header p {
+  margin-right: 30px;
+}
+
+header p,
+header a {
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+header a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  transition: width 0.3s linear;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+main {
+  min-height: 100%;
+  height: 100%;
+  padding: 200px 0;
+  border-block-start: 5px solid #000;
+  border-block-end: 5px solid #000;
+  background: linear-gradient(
+    to right,
+    rgb(96, 108, 136) 1%,
+    rgb(77, 90, 107) 30%,
+    rgb(49, 54, 68) 70%,
+    rgb(27, 33, 45) 100%
+  );
+}
+
+.scene {
+  padding: 120px 0;
+}
+
+.scene__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.car__body {
+  position: relative;
+  padding: 50px 0;
+}
+
+.car__top-lamp {
+  box-shadow: 0px 0px 84px 25px #ff0000;
+  border: 5px solid #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 30%;
+  top: 20px;
+  background: linear-gradient(
+    135deg,
+    hsla(353, 57%, 85%, 1) 0%,
+    hsla(353, 60%, 56%, 1) 50%,
+    hsla(353, 65%, 44%, 1) 51%,
+    hsla(353, 78%, 75%, 1) 100%
+  );
+}
+.car__front {
+  width: 250px;
+  height: 380px;
+  position: relative;
+  background-color: rgb(153 153 148);
+  border-radius: 45% 36% 0% 25% / 29% 0% 25% 0%;
+  z-index: 0;
+  left: 230px;
+  overflow: clip;
+  z-index: 2;
+}
+.car__front-light {
+  box-shadow: -55px 0px 92px 9px #ffdd00ff;
+  width: 40px;
+  height: 60px;
+  border-radius: 50%;
+  left: 235px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  background: linear-gradient(
+    135deg,
+    hsla(54, 91%, 96%, 1) 0%,
+    hsla(53, 87%, 58%, 1) 100%
+  );
+  bottom: 110px;
+  position: absolute;
+  display: inline-block;
+  z-index: 20;
+  transform: rotateY(40deg);
+}
+.car__windows {
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: 230px;
+}
+
+.car__window {
+  width: 80px;
+  height: 120px;
+  border: 2px solid #000;
+  position: absolute;
+  background: linear-gradient(
+    45deg,
+    hsla(197, 60%, 82%, 1) 0%,
+    hsla(196, 80%, 69%, 1) 33%,
+    hsla(194, 77%, 51%, 1) 67%,
+    hsla(197, 60%, 82%, 1) 100%
+  );
+  z-index: 3;
+}
+
+.car__window:nth-child(1) {
+  border-radius: 31% 37% 0% 27% / 54% 0% 25% 0%;
+}
+.car__window:nth-child(2) {
+  left: 120px;
+}
+.car__back {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  z-index: 2;
+  background-color: rgb(153 153 148);
+  bottom: 50px;
+  left: 40%;
+  border-radius: 0 5px 5px 0;
+}
+
+.car__wheels {
+  position: absolute;
+  width: 400px;
+  left: 40%;
+  bottom: 0;
+  z-index: 20;
+}
+.car__wheel {
+  width: 100px;
+  height: 100px;
+  border: 5px dashed #000;
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 0;
+}
+
+.car__wheel::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.car__wheel:nth-child(1) {
+  left: -200px;
+}
+
+.car__wheel:nth-child(2) {
+  right: 100px;
+}
