@@ -1,0 +1,26 @@
+/* Підключення шрифту через import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,700&display=swap");
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
