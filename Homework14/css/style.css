@@ -1,0 +1,162 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+@import url("fonts.css");
+
+/* #2f302c #7e7f7c  */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+[class*="__container"] {
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper main {
+  flex-grow: 1;
+}
+
+.header,
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+}
+
+.register {
+  padding-top: 82px;
+}
+
+.register__head {
+  text-align: center;
+  margin-bottom: 82px;
+}
+.register__title {
+  font-size: 32px;
+  margin-bottom: 18px;
+  color: #2f302c;
+  text-transform: uppercase;
+}
+
+.register__link {
+  font-size: 16px;
+  color: #7e7f7c;
+  font-weight: 700;
+}
+.register__body {
+  padding: 82px 0;
+}
+.register__items {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.register__item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  position: relative;
+}
+
+.item__title {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.item__subtitle {
+  color: #7e7f7c;
+  font-size: 16px;
+}
+.item__link {
+  font-weight: 700;
+  color: #2f302c;
+  text-decoration: underline;
+}
+.item__body {
+  padding-top: 72px;
+  width: 720px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.form__input {
+  width: 336px;
+  height: 44px;
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 40px;
+  padding-inline: 5px;
+  outline: none;
+}
+
+.form__input:nth-child(3) {
+  min-width: 100%;
+}
+
+.form button {
+  width: 336px;
+  height: 44px;
+  background-color: #2f302c;
+  color: #fff;
+}
+
+.item-banner {
+  flex-basis: 600px;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 60px 50px 60px 80px;
+}
+
+.item-banner__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.item-banner__content {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  max-width: 185px;
+}
+
+.content-banner p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  background-color: #ce0000;
+  max-width: 51px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.content-banner__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #2f302c;
+}
