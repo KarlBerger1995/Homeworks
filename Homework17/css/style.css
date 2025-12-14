@@ -1,0 +1,492 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+  color: #7e7f7c;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1422px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 32px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  margin-bottom: 30px;
+}
+
+.categories {
+  padding-top: 30px;
+}
+
+.categories__items {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 36px;
+  margin-bottom: 80px;
+}
+.categories__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+}
+.item-categories {
+  background-color: #f7f7f7;
+}
+.item-categories__content {
+  padding: 48px 46px 48px 36px;
+}
+.item-categories__title {
+  color: #2f302c;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+.item-categories__text {
+  margin-bottom: 38px;
+}
+
+.item-categories__image img {
+  object-fit: cover;
+}
+
+.item-categories__link {
+  position: relative;
+  padding: 10px 15px;
+}
+
+.item-categories__link:hover {
+  transition: all 0.4s linear;
+  transform: scale(1.05);
+  color: #2f302c;
+}
+
+.item-categories__link::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/Arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.item-categories--sofa {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.item-categories--sofa .item-categories__content {
+  padding: 48px 180px 0;
+}
+.item-categories--sofa .item-categories__text {
+  margin-bottom: 18px;
+}
+
+.item-categories:nth-child(1) .item-categories__content {
+  order: 2;
+}
+
+.item-categories--lights img {
+  padding: 0 32px 0 80px;
+}
+
+.item-categories--chair .item-categories__image {
+  text-align: right;
+}
+
+.trusted {
+  margin-bottom: 80px;
+}
+
+.trusted__title {
+  margin-bottom: 82px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2f302c;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.trusted__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trusted__items {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
+  gap: 68px clamp(30px, 5vw, 75px);
+}
+
+.trusted__item:hover .trusted__link {
+  transition: transform 0.4s linear;
+  transform: scale(1.1);
+}
+
+.product {
+  margin-bottom: 80px;
+}
+.product__title {
+  text-align: center;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #2f302c;
+  font-weight: 800;
+}
+.product__nav {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+.product__item {
+  font-weight: 700;
+  color: #2f302c;
+}
+
+.product__link {
+  position: relative;
+}
+
+.product__link::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  display: block;
+  background-color: #2f302c;
+  margin-top: 8px;
+  transition: all 0.3s linear;
+}
+
+.product__link:hover::after {
+  width: 100%;
+}
+
+.product__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(440px, auto));
+  column-gap: 36px;
+  row-gap: 72px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__item:hover .item-product__link {
+  transition: transform 0.6s linear;
+  transform: scale(1.1);
+  box-shadow: 8px 8px 10px rgb(180, 178, 178);
+}
+
+.item-product__link {
+  transition: transform 0.6s linear;
+}
+.item-product__image {
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.item-product__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.item-product__content > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.item-product__rating {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.item-product__price {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #2f302c;
+}
+
+.choose {
+  padding: 82px 0;
+}
+
+.choose__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: #2f302c;
+  margin-bottom: 72px;
+}
+
+.choose__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(348px, auto));
+  gap: 68px;
+  justify-items: center;
+  align-items: center;
+}
+.choose__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 24px;
+}
+.item-choose {
+  max-width: 348px;
+}
+
+.item-choose__title {
+  font-weight: 700;
+  color: #2f302c;
+  position: relative;
+}
+
+.item-choose__title:hover {
+  color: #7e7f7c;
+}
+
+.item-choose__title::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background-color: #2f302c;
+  margin-top: 5px;
+}
+
+.item-choose__title:hover::after {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+
+.item-choose__text {
+  text-align: center;
+}
+
+@media (width <=1420px) {
+  .item-categories--sofa .item-categories__content {
+    padding: 48px 120px 0;
+  }
+
+  .categories__items {
+    margin-bottom: 40px;
+  }
+
+  .trusted {
+    margin-bottom: 40px;
+  }
+
+  .trusted__title {
+    margin-bottom: 40px;
+  }
+
+  .trusted__items {
+    gap: 60px 40px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+
+  .product__nav {
+    margin-bottom: 40px;
+  }
+
+  .product__items {
+    grid-template-columns: repeat(auto-fill, minmax(440px, auto));
+    column-gap: 36px;
+  }
+
+  .product {
+    margin-bottom: 50px;
+  }
+
+  .choose {
+    padding: 0;
+  }
+}
+
+@media (width <=1360px) {
+  .categories__items {
+    grid-template-columns: 321px minmax(min(321px, 100%), 1fr) 321px;
+    gap: 40px;
+  }
+  .item-categories--sofa .item-categories__content {
+    padding: 48px 60px 0;
+  }
+
+  .choose__items {
+    column-gap: 40px;
+    row-gap: 60px;
+  }
+}
+
+@media (width <=1200px) {
+  .item-categories--lights .item-categories__content {
+    text-align: right;
+  }
+
+  .item-categories__content {
+    padding: 48px 60px 0;
+  }
+  .trusted__items {
+    gap: 50px 30px;
+  }
+}
+
+@media (width <=1155px) {
+  .choose__items {
+    grid-template-columns: repeat(auto-fill, minmax(348px, auto));
+  }
+
+  .choose__item {
+    min-width: 100%;
+  }
+}
+
+@media (width <=1080px) {
+  .categories__items {
+    grid-template-columns: repeat(
+      auto-fill,
+      321px minmax(min(321px, 100%), 1fr)
+    );
+    gap: 30px;
+  }
+}
+
+@media (width <=992px) {
+  .trusted__items {
+    gap: 40px 30px;
+  }
+
+  .choose__items {
+    gap: 40px;
+  }
+
+  .product__items {
+    row-gap: 50px;
+  }
+}
+
+@media (width <=768px) {
+  .item-categories__content {
+    padding: 36px 20px 10px 20px;
+  }
+
+  .item-categories--sofa .item-categories__content {
+    padding: 36px 20px 0;
+  }
+
+  .trusted__items {
+    gap: 35px 30px;
+  }
+
+  .categories__items {
+    grid-template-columns: repeat(auto-fill, minmax(321px, 100%));
+  }
+
+  .trusted {
+    margin-bottom: 30px;
+  }
+
+  .product__title,
+  .trusted__title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .product__nav {
+    margin-bottom: 20px;
+    gap: 24px;
+  }
+
+  .item-product__price {
+    font-size: 16px;
+  }
+
+  .item-product__image {
+    margin-bottom: 20px;
+  }
+
+  .product__items {
+    row-gap: 40px;
+  }
+
+  .choose__items {
+    grid-template-columns: repeat(auto-fill, minmax(348px, auto));
+  }
+
+  .choose__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <=480px) {
+  .product__items {
+    grid-template-columns: repeat(auto-fill, minmax(min(440px, 100%), 1fr));
+    row-gap: 30px;
+  }
+
+  .product__title {
+    font-size: 22px;
+  }
+
+  .product__nav {
+    margin-bottom: 30px;
+  }
+
+  .choose__items {
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  }
+
+  .categories__items {
+    grid-template-columns: repeat(auto-fill, minmax(321px, 100%));
+  }
+
+  .item-categories__text {
+    margin-bottom: 24px;
+  }
+}
+
+@media (width <=420px) {
+  .categories__items {
+    grid-template-columns: repeat(auto-fill, minmax(min(321px, 100%), 1fr));
+  }
+
+  .item-categories--sofa .item-categories__content {
+    padding: 24px 10px 0;
+  }
+
+  .item-categories__content {
+    padding: 24px 10px 0;
+  }
+}
