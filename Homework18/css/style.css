@@ -1,0 +1,909 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Підключення шрифтів */
+@import url("fonts.css");
+/* Основні стилі */
+
+/* Значення за замовченням  */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  line-height: 1.42;
+  color: #343434;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------- */
+
+.menu-burger {
+  display: none;
+}
+
+.header {
+  padding: 32px 0;
+  margin-bottom: 103px;
+}
+
+.header__bg {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.header__logo {
+  width: 124px;
+  height: 44px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+.menu__link {
+  line-height: 100%;
+  position: relative;
+  transition: all 0.5s linear;
+  text-transform: capitalize;
+}
+
+.menu__link:hover {
+  color: rgba(186, 147, 111, 1);
+}
+
+.menu__link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: rgba(186, 147, 111, 1);
+  display: block;
+  margin-top: 4px;
+  transition: all 0.5s linear;
+}
+
+.menu__link:hover::after {
+  width: 100%;
+}
+
+.menu-button {
+  background-color: rgba(186, 147, 111, 1);
+  color: #fff;
+  padding: 11px 47px;
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: 500;
+  max-width: 166px;
+  line-height: 100%;
+  transition: all 0.5s linear;
+  text-align: center;
+}
+
+.menu-button:hover {
+  background-color: #fff;
+  color: rgba(186, 147, 111, 1);
+  box-shadow: 0 0 6px 5px rgba(186, 147, 111, 1);
+}
+
+.hero {
+  margin-bottom: 140px;
+  /* display: none; */
+}
+.hero__items {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 71px;
+  padding-bottom: 57px;
+  max-width: 687px;
+  flex: 1 1 57%;
+}
+
+.hero__content h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: rgba(186, 147, 111, 1);
+  margin-bottom: 70px;
+}
+
+.hero__content p {
+  margin-bottom: 95px;
+}
+
+.hero__link {
+  position: relative;
+  padding-left: 60px;
+  display: inline-flex;
+  align-items: center;
+  max-width: 186px;
+}
+
+.hero__link span {
+  transition: all 0.5s linear;
+}
+
+.hero__link span::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: rgba(186, 147, 111, 1);
+  display: block;
+  transition: all 0.5s linear;
+}
+
+.hero__link span:hover::after {
+  width: 100%;
+}
+
+.hero__link:hover span {
+  transform: scale(1.05);
+  color: rgba(186, 147, 111, 1);
+  transition: transform 0.5s linear;
+}
+
+.hero__link::before {
+  content: "";
+  background-image: url(../img/Elipse.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+}
+
+.hero__link::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/right-arrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -8px;
+}
+
+.hero__image {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 43%;
+}
+.hero__img {
+  aspect-ratio: 486 / 647;
+  border-radius: 33px;
+  object-fit: cover;
+}
+.hero__bg {
+  position: absolute;
+  left: 0;
+  top: 419px;
+  z-index: -1;
+}
+
+.practice {
+  margin-bottom: 140px;
+  position: relative;
+}
+.practice__bg {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  z-index: -1;
+}
+.practice__items {
+  display: flex;
+  gap: 40px;
+}
+
+.practice__item {
+  display: flex;
+}
+
+.item-practice__image {
+  overflow: hidden;
+  border-radius: 33px;
+  flex: 1 1 43%;
+}
+
+.item-practice__image img {
+  aspect-ratio: 600 / 602;
+  object-fit: cover;
+}
+
+.item-practice__content {
+  padding: 63px 0 43px;
+  flex: 1 1 57%;
+  max-width: 561px;
+}
+
+.item-practice__content h2 {
+  font-size: 35px;
+  font-family: "Lora", sans-serif;
+  color: rgba(186, 147, 111, 1);
+  margin-bottom: 55px;
+}
+
+.item-practice__content p:first-of-type {
+  margin-bottom: 46px;
+}
+
+.item-practice__content p:last-of-type {
+  font-size: 17px;
+  line-height: 1.59;
+  margin-bottom: 43px;
+}
+
+.item-practice__content .item-practice__link {
+  font-weight: 600;
+  color: rgba(186, 147, 111, 1);
+}
+
+.item-practice__content .item-practice__link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: rgba(186, 147, 111, 1);
+  display: block;
+  transition: all 0.5s linear;
+}
+
+.item-practice__content .item-practice__link:hover::after {
+  width: 100%;
+}
+
+.item-practice__button {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: rgba(186, 147, 111, 1);
+  color: #fff;
+  padding: 12px 47px;
+  border-radius: 15px;
+  line-height: 100%;
+  transition: all 0.5s linear;
+}
+
+.item-practice__button:hover {
+  background-color: #fff;
+  color: rgba(186, 147, 111, 1);
+  box-shadow: 0 0 5px 5px rgba(186, 147, 111, 1);
+}
+
+.yoga-lesson {
+  margin-bottom: 140px;
+}
+.yoga-lesson__content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.yoga-lesson__title {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgba(186, 147, 111, 1);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 32px;
+}
+.yoga-lesson__text {
+  max-width: 839px;
+  font-size: 17px;
+  line-height: 1.59;
+  margin-bottom: 64px;
+}
+.yoga-lesson__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 41px;
+}
+
+.yoga-lesson__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.yoga-lesson__item:nth-child(2) .item-lesson__image {
+  margin-bottom: 12px;
+}
+
+.item-lesson__image {
+  overflow: hidden;
+}
+
+.item-lesson__img {
+  border-radius: 33px;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.item-lesson__img--beginner {
+  aspect-ratio: 385 / 477;
+}
+
+.item-lesson__img--regular {
+  aspect-ratio: 1;
+}
+
+.item-lesson__img--individual {
+  aspect-ratio: 362 / 477;
+}
+
+.item-lesson__caption {
+  text-align: center;
+}
+
+.item-lesson__caption a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: rgba(186, 147, 111, 1);
+  display: block;
+  transition: all 0.5s linear;
+}
+
+.item-lesson__caption a:hover::after {
+  width: 100%;
+}
+
+.item-lesson__caption h3 {
+  font-family: "Lora", sans-serif;
+  font-size: 22px;
+  line-height: 100%;
+  color: rgba(186, 147, 111, 1);
+}
+
+.schedule {
+  margin-bottom: 138px;
+}
+.schedule__content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 41px;
+}
+
+.schedule__content h2 {
+  font-family: "Lora", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgba(186, 147, 111, 1);
+  margin-bottom: 16px;
+}
+
+.schedule__content p {
+  font-size: 17px;
+  line-height: 1.59;
+  max-width: 839px;
+}
+
+.schedule__box {
+  display: flex;
+  gap: 36px;
+}
+.schedule__item {
+  display: flex;
+}
+
+.schedule__item:nth-child(1) {
+  flex: 1 1 55%;
+}
+
+.schedule__item .item-schedule__table {
+  padding: 71px 0 75px;
+}
+.table {
+  max-width: 661px;
+  min-width: 100%;
+  position: relative;
+}
+
+.table__head {
+  display: none;
+}
+
+.table__body {
+  position: relative;
+}
+
+.table__body td {
+  font-size: 17px;
+  line-height: 1.59;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.table__row:last-child {
+  border-bottom: 1px solid rgba(186, 147, 111, 1);
+}
+
+.table__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0 17px;
+  border-top: 1px solid rgba(186, 147, 111, 1);
+}
+
+.table__row a {
+  transition: all 0.5s;
+}
+
+.table__row a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: rgba(186, 147, 111, 1);
+  display: block;
+  transition: all 0.5s linear;
+}
+
+.table__row a:hover {
+  transition: all 0.5s;
+  color: rgba(186, 147, 111, 1);
+  transform: scale(0.9);
+}
+
+.table__row a:hover::after {
+  width: 100%;
+}
+
+.table__row td:nth-child(2):after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/up-right-arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -15px;
+}
+
+.item-schedule__image {
+  overflow: hidden;
+  border-radius: 33px;
+  flex: 1 1 45%;
+}
+
+.item-schedule__image img {
+  object-fit: cover;
+  aspect-ratio: 503 / 602;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: rgb(217, 179, 143);
+}
+
+@media (width < 1200px) {
+  .hero,
+  .practice,
+  .yoga-lesson,
+  .schedule {
+    margin-bottom: 80px;
+  }
+
+  .schedule__item .item-schedule__table {
+    padding: 30px 0 35px;
+  }
+
+  .table__body td {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .schedule__box {
+    column-gap: 20px;
+  }
+
+  .practice__items {
+    column-gap: 30px;
+  }
+
+  .hero__content {
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+
+  .hero__content p {
+    margin-bottom: 50px;
+  }
+
+  .hero__content h1 {
+    margin-bottom: 35px;
+  }
+
+  .hero__image {
+    flex: 1 1 40%;
+  }
+}
+
+@media (width < 1160px) {
+  .header {
+    padding: 16px 0;
+  }
+
+  .menu-button {
+    font-size: 16px;
+  }
+  .header__nav {
+    gap: 50px;
+  }
+  .menu__list {
+    gap: 30px;
+  }
+  .hero__content {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    flex: 1 1 50%;
+  }
+  .item-practice__content {
+    padding: 35px 0 25px;
+  }
+
+  .item-practice__content h2,
+  .item-practice__content p:first-of-type,
+  .item-practice__content p:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  .item-practice__content p {
+    font-size: 16px;
+  }
+}
+
+@media (width < 1080px) {
+  .item-practice__content {
+    padding-top: 20px;
+  }
+
+  .item-practice__content h2 {
+    font-size: 30px;
+  }
+
+  .yoga-lesson__title {
+    margin-bottom: 24px;
+    font-size: 25px;
+  }
+  .yoga-lesson__text {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+@media (width < 1020px) {
+  .schedule__box {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .schedule__item .item-schedule__table {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .schedule__content {
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+  }
+
+  .schedule__content h2 {
+    font-size: 30px;
+  }
+
+  .schedule__content p {
+    min-width: 100%;
+  }
+
+  .item-schedule__image img {
+    min-width: 100%;
+  }
+}
+
+@media (width <=970px) {
+  .header__nav {
+    column-gap: 25px;
+  }
+  .menu__list {
+    column-gap: 20px;
+  }
+  .menu-button {
+    padding: 11px 24px;
+    font-size: 16px;
+  }
+  .hero__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-basis: 45%;
+  }
+  .hero__content h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  .hero__content p,
+  .hero__link {
+    font-size: 16px;
+  }
+
+  .item-practice__content h2,
+  .item-practice__content p:first-of-type,
+  .item-practice__content p:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .yoga-lesson__items {
+    column-gap: 25px;
+  }
+}
+
+@media (width < 892px) {
+  .item-practice__content {
+    padding-top: 0;
+  }
+}
+
+@media (width < 881px) {
+  .practice__items {
+    flex-direction: column;
+  }
+
+  .item-practice__content {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .item-practice__image img {
+    min-width: 100%;
+  }
+}
+
+@media (width < 868px) {
+  .yoga-lesson__content {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    text-align: justify;
+  }
+  .yoga-lesson__title {
+    font-size: 30px;
+  }
+  .yoga-lesson__items {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .item-lesson__image img {
+    position: relative;
+    width: 100vw;
+  }
+
+  .item-lesson__caption {
+    text-align: center;
+  }
+}
+
+@media (width < 850px) {
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .hero,
+  .practice,
+  .yoga-lesson,
+  .schedule {
+    margin-bottom: 50px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    overflow: auto;
+    padding: 100px 15px 30px 15px;
+    background-color: #fafafa;
+    transition: left 0.6s;
+  }
+
+  .menu::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 100%;
+    z-index: 2;
+    background-color: #fff;
+    transition: left 0.6s;
+  }
+
+  .header__logo,
+  .menu-button,
+  .menu-burger {
+    position: relative;
+    z-index: 3;
+  }
+
+  .menu-burger {
+    display: block;
+    width: 30px;
+    height: 18px;
+    position: relative;
+    background: transparent;
+  }
+
+  .menu-burger span,
+  .menu-burger::before,
+  .menu-burger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(186, 147, 111, 1);
+    position: absolute;
+    right: 0;
+    transition: all 0.6s linear;
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
+  }
+
+  .menu-burger span {
+    top: 50%;
+    translate: 0 -50%;
+  }
+
+  .menu,
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  [data-menu-header-open] .menu-burger span {
+    width: 0;
+  }
+
+  [data-menu-header-open] body {
+    overflow: hidden;
+  }
+
+  [data-menu-header-open] .menu-burger::before {
+    top: 50%;
+    rotate: -45deg;
+    translate: 0 -50%;
+  }
+
+  [data-menu-header-open] .menu-burger::after {
+    bottom: 50%;
+    rotate: 45deg;
+    translate: 0 50%;
+  }
+
+  [data-menu-header-open] .menu,
+  [data-menu-header-open] .menu::before {
+    left: 0;
+  }
+
+  .menu-button {
+    padding: 11px 24px;
+    text-align: center;
+    margin-left: auto;
+  }
+  .hero__items {
+    flex-direction: column;
+  }
+  .hero__content {
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    padding-bottom: 60px;
+  }
+
+  .hero__content p {
+    margin-bottom: 35px;
+  }
+
+  .hero__content h1 {
+    margin-bottom: 0;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .hero__link::after {
+    right: -30px;
+  }
+
+  .hero__image {
+    min-width: 100%;
+  }
+}
+
+@media (width <=630px) {
+  .schedule__item:nth-child(1) {
+    overflow-x: auto;
+  }
+
+  .item-schedule .item-schedule__table {
+    width: 100%;
+    min-width: 600px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (width <=600px) {
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .hero,
+  .practice,
+  .yoga-lesson,
+  .schedule {
+    margin-bottom: 40px;
+  }
+
+  .hero__content {
+    padding-bottom: 50px;
+  }
+}
