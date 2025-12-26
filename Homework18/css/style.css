@@ -394,7 +394,15 @@ body {
 
 .schedule {
   margin-bottom: 138px;
+  position: relative;
 }
+
+.schedule__bg {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}
+
 .schedule__content {
   display: inline-flex;
   flex-direction: column;
@@ -408,6 +416,7 @@ body {
   text-transform: uppercase;
   color: rgba(186, 147, 111, 1);
   margin-bottom: 16px;
+  max-width: 515px;
 }
 
 .schedule__content p {
@@ -871,8 +880,8 @@ body {
     right: -30px;
   }
 
-  .hero__image {
-    min-width: 100%;
+  .hero__image img {
+    min-width: calc(100vw - 30px);
   }
 }
 
